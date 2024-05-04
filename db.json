@@ -1,7 +1,7 @@
 {
   "todos": [
-    { "id": "1", "title": "Tilte One", "completed": false},
-    { "id": "2", "title": "Tilte Two", "completed": false },
-    { "id": "3", "title": "Tilte Three", "completed": false }
+    { "id": "1", "title": "Title One", "completed": false},
+    { "id": "2", "title": "Title Two", "completed": false },
+    { "id": "3", "title": "Title Three", "completed": false }
   ]
 }
