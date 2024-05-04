@@ -4,7 +4,7 @@ import { TodosComponent } from './components/todos/todos.component';
 import { TodoDetailsComponent } from './components/todo-details/todo-details.component';
 import { ContactUsComponent } from './components/contact-us/contact-us.component';
 import { AboutUsComponent } from './components/about-us/about-us.component';
-import { NotFoundComponent } from './not-found/not-found.component';
+import { NotFoundComponent } from './components/not-found/not-found.component';
 
 export const routes: Routes = [
   { path: '', redirectTo: '/todos', pathMatch: 'full' },
