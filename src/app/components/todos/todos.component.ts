@@ -21,11 +21,22 @@ export class TodosComponent implements OnInit {
       this.todos = allTodos;
     });
   }
-  createTodo():void {
-    const newTodo1 = {id:this.newTodo.id,title:this.newTodo.title,completed:false}
-    this.newTodo = newTodo1
-    this.todoService.createToDo(newTodo1).subscribe(todo=>{
-      this.todos.push(todo)
-    })
+  createTodo(): void {
+    const newTodo1 = {
+      id: this.newTodo.id,
+      title: this.newTodo.title,
+      completed: false,
+    };
+    this.newTodo = newTodo1;
+    this.todoService.createToDo(newTodo1).subscribe((todo) => {
+      this.todos.push(todo);
+    });
+  }
+  deleteTodo(todoId: string): void {
+    this.todoService.deleteToDo(todoId).subscribe(() => {
+      this.todos = this.todos.filter((todo) => {
+        todo.id !== todoId;
+      });
+    });
   }
 }
